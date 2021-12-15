@@ -1,14 +1,111 @@
 <head>
     <title>lab01</title>
+    <style>
+        nav {
+            float: left;
+            width: 60%;
+            height: 300px;
+        }
+        article{
+            float: left;
+            width: 40%;
+            height: 300px;
+        }
+        section::after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        @media (max-width: 600px) {
+            nav, article {
+            width: 100%;
+            height: auto;
+            }
+        }
+    </style>
 </head>
 <body>
     <br><h1>Moon</h1>
     <hr>
-    <table style="width: 50%;">
+    <section></section>
+    <nav>
+        <p>
+            &nbsp;&nbsp;&nbsp;The Moon is Earth's only natural satellite. It is the largest natural satellite in the Solar System relative to the size of its planet, 
+            the fifth largest satellite in the Solar System overall, and is larger than any known dwarf planet. The Moon is a planetary-mass object that formed a differentiated rocky body, 
+            making it a satellite planet under geophysical definitions of the term.It lacks any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's.
+            The Moon's orbit around Earth has a sidereal period of 27.3 days. During each synodic period of 29.5 days, the amount of visible surface illuminated by the Sun varies from none up to 100%, 
+            resulting in lunar phases that form the basis for the months of a lunar calendar.
+        </p>
+        <h1>Imag in text</h1>
+        <table>        
+            <tr>
+                <td><img src="moon.jpeg" width="240" height="180"></td>
+                <td>
+                    <p>
+                        &nbsp;&nbsp;&nbsp;Both the Moon's prominence in the earthly sky and its regular cycle of phases have provided cultural references and influences for human societies throughout history. 
+                        Such influences can be found in language, calendar systems, art, and mythology. The first artificial object to reach the Moon was the Soviet Union's Luna 2 uncrewed spacecraft in 1959; 
+                        this was followed by the first successful soft landing by Luna 9 in 1966. 
+                    </p>
+                </td>
+            </tr>
+        </table>
+        <h1>Time table</h1>
+        <form>
+            <div>
+                <label for="name">Your Name:</label>
+                <input type="text" id="name"><br><br>
+                <label for="email">Your e-mail:</label>
+                <input type="text" id="email"><br><br>
+            </div>
+            <div>
+                <table>
+                    <tr>
+                        <td>
+                            <label for="comment">Comments:</label>
+                        </td>    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td> <textarea id="comment" rows="5" ></textarea></td>
+                    
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><input  type="submit" value="Send message"></td>
+                    </tr>
+                </table>
+            </div>
+        </form>
+    </nav>
+    <article>
+        <br><br>
+        <table style="background-color: #778899;">
+            <tr>
+                <td>
+                    <ul>
+                        <li><a href="https://en.wikipedia.org/wiki/Natural_satellite">natural satellite</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/List_of_natural_satellites">fifth largest satellite</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Dwarf_planet">dwarf planet</a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Planetary-mass_moon">planetary-mass object </a></li>
+                        <li><a href="https://en.wikipedia.org/wiki/Geophysical_definition_of_planet">geophysical definitions of the term</a></li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input  type="text">
+                    &nbsp;&nbsp;&nbsp;<input  type="submit" value="Search"> 
+                </td>
+            </tr>
+        </table>
+    </article>
+    
+
+    <!--<table style="width: 50%;">
         <tr>
             <td>
                 <p>
-                    The Moon is Earth's only natural satellite. It is the largest natural satellite in the Solar System relative to the size of its planet, 
+                    &nbsp;&nbsp;&nbsp;The Moon is Earth's only natural satellite. It is the largest natural satellite in the Solar System relative to the size of its planet, 
                     the fifth largest satellite in the Solar System overall, and is larger than any known dwarf planet. The Moon is a planetary-mass object that formed a differentiated rocky body, 
                     making it a satellite planet under geophysical definitions of the term.It lacks any significant atmosphere, hydrosphere, or magnetic field. Its surface gravity is about one-sixth of Earth's.
                     The Moon's orbit around Earth has a sidereal period of 27.3 days. During each synodic period of 29.5 days, the amount of visible surface illuminated by the Sun varies from none up to 100%, 
@@ -24,7 +121,7 @@
             <td><img src="moon.jpeg" width="240" height="180"></td>
             <td>
                 <p>
-                    Both the Moon's prominence in the earthly sky and its regular cycle of phases have provided cultural references and influences for human societies throughout history. 
+                    &nbsp;&nbsp;&nbsp;Both the Moon's prominence in the earthly sky and its regular cycle of phases have provided cultural references and influences for human societies throughout history. 
                     Such influences can be found in language, calendar systems, art, and mythology. The first artificial object to reach the Moon was the Soviet Union's Luna 2 uncrewed spacecraft in 1959; 
                     this was followed by the first successful soft landing by Luna 9 in 1966. 
                 </p>
@@ -63,6 +160,8 @@
                 </tr>
             </table>
         </div>
-    </form>
+    </form>-->
+
+
     
 </body>
